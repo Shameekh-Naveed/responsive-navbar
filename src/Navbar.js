@@ -15,9 +15,9 @@ const Navbar = () => {
           onClick={() => setActive(!active)}
         />
       </span>
-      <ul>
+      <ul className={`${active ? "active" : ""}`}>
         {/* <div className="push"> */}
-        <li className={`nav-item ${active ? "active" : ""}`}>
+        <li className={`nav-item`}>
           <a href="#">Home</a>
         </li>
         {/* </div> */}

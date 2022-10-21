@@ -33,14 +33,16 @@ nav ul{
 
 .nav-item{
 
-    margin: 0 0 ;
+    /* margin: auto 0 ; */
     padding: 0 1.75rem;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* height: 100%; */
-    /* display: inline-flex; */
+    height: 100%;
+    text-align: center;
+
+    display: inline-flex;
     /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
 }
 /* .push{
     height: 100%;
@@ -82,6 +84,7 @@ a{
     
     nav ul{
         display: none;
+        text-align: center;
         /* display: block;
         width: 100vw;
         height:20rem; */
@@ -91,7 +94,7 @@ a{
     .active{
         display: block;
         width: 100vw;
-        height:20rem;
+        height:auto;
     }
     /* #logo{
         display: none;
@@ -99,6 +102,9 @@ a{
     .nav-item{
         display: block;
         background-color: #000;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        height: auto;
 
     }
     #hamburger{
