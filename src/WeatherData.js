@@ -17,7 +17,7 @@ const WeatherData = () => {
         Origin: "*",
       },
     });
-    console.log(res);
+    const res = await response.json();
     setData(res.businesses);
     // return response.json(); // parses JSON response into native JavaScript objects
   };
