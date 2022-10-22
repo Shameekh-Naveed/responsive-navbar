@@ -28,7 +28,7 @@ const Navbar = () => {
           <a href="#">Login</a>
         </li>
         <li className="nav-item">
-          <a href="#">Contact Us</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>
