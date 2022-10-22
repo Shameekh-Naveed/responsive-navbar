@@ -3,29 +3,20 @@ import React, { useState, useEffect } from "react";
 const WeatherData = () => {
   const [data, setData] = useState([]);
 
-  // console.log(process.env.REACT_APP_API_KEY)
-
-  // Example POST method implementation:
+ 
   const getData = async () => {
     let url =
       "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=NewYorkCity/";
     // Default options are marked with *
     const response = await fetch(url, {
-      //   method: "POST", // *GET, POST, PUT, DELETE, etc.
-      // mode: "no-cors", // no-cors, *cors, same-origin
-      //   cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      //   credentials: 'same-origin', // include, *same-origin, omit
+     
       headers: {
-        // "Content-Type": "application/json",
         Authorization: process.env.REACT_APP_API_KEY,
         Accept: "*/*",
         "Access-Control-Allow-Origin": "*",
         Origin: "*",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      // body: JSON.stringify(data) // body data type must match "Content-Type" header
     });
-    const res = await response.json();
     console.log(res);
     setData(res.businesses);
     // return response.json(); // parses JSON response into native JavaScript objects
